@@ -1,0 +1,17 @@
+{
+    "races": [
+        "Dwarf",
+        "Elf",
+        "Gnome",
+        "Goliath",
+        "Half-Elf",
+        "Half-Orc",
+        "Halfling",
+        "Human",
+        "Orc",
+        "Tabaxi",
+        "Tiefling",
+        "Tortle",
+        "Triton"
+    ]
+}
