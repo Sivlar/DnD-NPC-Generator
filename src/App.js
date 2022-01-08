@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import GenderSelector from './components/GenderSelector';
 import AgeSelector from './components/AgeSelector';
+import RandomButton from './components/RandomButton';
 
 function App() {
   const [state, setstate] = useState(false)
@@ -12,6 +13,7 @@ function App() {
       </div>
       <GenderSelector />
       <h2>Race</h2>
+      <RandomButton />
       <AgeSelector />
     </div>
   );

@@ -1,17 +1,15 @@
 import React from "react";
-import reactDom from "react-dom";
-import races from "data/races.json"
-JSON.parse()
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            races
-        }
-        this.handleClick = this.handleClick.bind(this)
+import races from "../data/races.json"
+
+function RandomButton() {
+    function handleRandom() {
+        const rand = Math.floor(Math.random() * races.length);
+        console.log(races[rand]);
     }
-    handleClick() {
-        const races =this.state.races
-        const randraces = races[Math.floor(Math.random())];
-    }
+
+    return (
+        <button onClick={handleRandom}>Randomize</button>
+    );
 }
+
+export default RandomButton;
