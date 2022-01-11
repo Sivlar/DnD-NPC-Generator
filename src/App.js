@@ -1,17 +1,16 @@
 import { useState } from 'react';
-import GenderSelector from './components/gender/GenderSelector';
-import RaceSelector from './components/race/RaceSelector';
-import AgeSelector from './components/age/AgeSelector';
+import GenderSelector from './components/GenderSelector';
+import RaceSelector from './components/RaceSelector';
+import AgeSelector from './components/AgeSelector';
 
 function App() {
-  const [state, setstate] = useState(false)
-
   return (
     <div>
       <div className='title'>
         <h1>DnD NPC Generator</h1>
       </div>
       <GenderSelector />
+      {/* <NameGenerator /> */}
       <RaceSelector />
       <AgeSelector />
     </div>

@@ -1,4 +1,4 @@
-import races from "../../data/races.json"
+import races from "../data/races.json"
 import { useState } from 'react';
 
 function RaceSelector() {
@@ -12,7 +12,7 @@ function RaceSelector() {
     <div style={{ backgroundColor: "yellow" }}>
       <h2>Race</h2>
       <button onClick={getRandRace}>Randomize</button>
-      { randNum > 0 ? <div>{(races[randNum])}</div> : null }
+      {randNum > 0 ? <div>{(races[randNum])}</div> : null}
     </div>
   );
 }
