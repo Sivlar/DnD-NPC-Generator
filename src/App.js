@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import GenderSelector from './components/GenderSelector';
-import AgeSelector from './components/AgeSelector';
-import RandomButton from './components/RandomButton';
-import AgeButton from './components/AgeButton';
+import GenderSelector from './components/gender/GenderSelector';
+import RaceSelector from './components/race/RaceSelector';
+import AgeSelector from './components/age/AgeSelector';
 
 function App() {
   const [state, setstate] = useState(false)
@@ -13,10 +12,8 @@ function App() {
         <h1>DnD NPC Generator</h1>
       </div>
       <GenderSelector />
-      <h2>Race</h2>
-      <RandomButton />
+      <RaceSelector />
       <AgeSelector />
-      <AgeButton />
     </div>
   );
 }

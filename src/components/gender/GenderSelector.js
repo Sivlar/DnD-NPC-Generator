@@ -4,12 +4,12 @@ function GenderSelector() {
   const [gender, setGender] = useState("Either");
 
   return (
-    <>
+    <div style={{backgroundColor:"green"}}>
       {/* <hr /> */}
 
       <div className="card"><h2>Gender</h2></div>
       <div>
-        <input type="radio" id="either" name="gender" value="Either" checked></input>
+        <input type="radio" id="either" name="gender" value="Either"></input>
         <label htmlFor="either">Either</label>
       </div>
       <div>
@@ -37,7 +37,7 @@ function GenderSelector() {
       </form>
 
       <br /><hr /> */}
-    </>
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import React from "react";
-import gender from "../data/gender.json"
+import gender from "../../data/gender.json"
 render() 
 function RaceButton() {
     function randrace() {
