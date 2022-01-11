@@ -1,0 +1,23 @@
+{
+    "firstNames": {
+        "maleNames": [
+            "Jim",
+            "Dave",
+            "Frank",
+            "Jeff",
+            "Bob"
+        ],
+        "femaleNames": [
+            "Debra",
+            "Nancy",
+            "Julie",
+            "Amy"
+        ]
+    },
+    "lastNames": [
+        "Sharp",
+        "Knight",
+        "Mason",
+        "Reynolds"
+    ]
+}
