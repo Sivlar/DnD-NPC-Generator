@@ -1,5 +1,4 @@
 import names from "../data/names.json"
-import GenderSelector from "./GenderSelector"
 import { useState } from "react"
 
 function NameSelector(props) {
