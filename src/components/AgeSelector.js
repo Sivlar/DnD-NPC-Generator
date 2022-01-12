@@ -9,7 +9,7 @@ function AgeSelector() {
   }
 
   return (
-    <div style={{ backgroundColor: "blue" }}>
+    <div style={{ backgroundColor: "lightBlue" }}>
       <h2>Age</h2>
       <button onClick={getRandAge}>Randomize</button>
       {randAge > 0 ? <div>{randAge}</div> : null}

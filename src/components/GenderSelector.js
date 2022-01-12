@@ -1,20 +1,20 @@
-import { useState } from 'react';
-
-function GenderSelector() {
-  const [gender, setGender] = useState("");
-
+function GenderSelector(props) {
   function getGender() {
     const randNum = Math.floor(Math.random() * 2);
     const chosenGend = ["Male", "Female"][randNum];
-    console.log(chosenGend);
-    setGender(chosenGend);
+    props.setGender(chosenGend);
+  }
+
+  function clearGender() {
+    props.setGender("");
   }
 
   return (
     <div style={{ backgroundColor: "green" }}>
       <h2>Gender</h2>
       <button onClick={getGender}>Randomize</button>
-      {gender !== "" ? <div>{gender}</div> : null}
+      <button onClick={clearGender}>Clear</button>
+      {props.gender !== "" ? <div>{props.gender}</div> : null}
 
       {/* <div className="card"><h2>Gender</h2></div>
       <div>

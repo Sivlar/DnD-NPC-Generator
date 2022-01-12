@@ -6,28 +6,19 @@ import NameSelector from './components/NameSelector'
 
 
 function App() {
-  const [name, setName] = useState("")
+  const [gender, setGender] = useState("");
 
   return (
     <div>
       <div className='title'>
         <h1>DnD NPC Generator</h1>
       </div>
-      <GenderSelector />
-      {/* <NameGenerator /> */}
-      <RaceSelector />
       <AgeSelector />
-      <GenderSelector setName={setName} / >
-      <NameSelector name= {name} / >
+      <RaceSelector />
+      <GenderSelector setGender={setGender} gender={gender} />
+      <NameSelector gender={gender} />
     </div>
   );
-}
-const NameSelector = ({name}) => {
-  
-}
-
-const GenderSelector = ({setName}) => {
-  
 }
 
 export default App;
